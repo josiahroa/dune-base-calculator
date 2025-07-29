@@ -1,0 +1,18 @@
+export const enum Material {
+  SalvagedMetal = "Salvaged Metal",
+  SteelIngot = "Steel Ingot",
+  CobaltPaste = "Cobalt Paste",
+  CalibratedServok = "Calibrated Servok",
+  DuraluminumIngot = "Duraluminum Ingot",
+  SpiceMelange = "Spice Melange",
+  PlastaniumIngot = "Plastanium Ingot",
+  SiliconeBlock = "Silicone Block",
+  ComplexMachinery = "Complex Machinery",
+  AdvancedMachinery = "Advanced Machinery",
+  IronIngot = "Iron Ingot",
+  CopperIngot = "Copper Ingot",
+  ArmorPlating = "Armor Plating",
+  ThermoelectricCooler = "Thermoelectric Cooler",
+  MilitaryPowerRegulator = "Military Power Regulator",
+  IndustrialPump = "Industrial Pump",
+}
