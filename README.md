@@ -135,3 +135,8 @@ WaterGenerator extends Functional Unit
 | Thermoelectric Cooler    |
 | Military Power Regulator |
 | Industrial Pump          |
+
+## Theme
+
+Primary: #151719
+Text Primary:
