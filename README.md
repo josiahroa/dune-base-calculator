@@ -73,7 +73,7 @@ WaterGenerator extends Functional Unit
 | Advanced Sub-Fief Console      | 15    | USE        | null           |
 | Fuel-Powered Generator         | 75    | GENERATE   | null           |
 | Windturbine Omni Directional   | 150   | GENERATE   | null           |
-| Windturbine Omni Directional   | 350   | GENERATE   | null           |
+| Windturbine Directional        | 350   | GENERATE   | null           |
 | Spice-Powered Generator        | 1000  | GENERATE   | null           |
 | Repair Station                 | 20    | USE        | null           |
 | Recycler                       | 15    | USE        | null           |

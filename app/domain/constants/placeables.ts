@@ -1,5 +1,13 @@
+import type { Placeable } from "../models/placeable";
 import type { FunctionalUnit } from "../models/functional-unit";
 import type { WaterGenerator } from "../models/water-generator";
+
+export const enum Category {
+  Utilities = "Utilities",
+  Fabricators = "Fabricators",
+  Refineries = "Refineries",
+  Storage = "Storage",
+}
 
 export const enum PowerType {
   USE = "USE",
@@ -35,7 +43,7 @@ export const WindturbineOmniDirectional: FunctionalUnit = {
 };
 
 export const WindturbineOmniDirectionalLarge: FunctionalUnit = {
-  name: "Windturbine Omni Directional",
+  name: "Windturbine Directional",
   power: 350,
   powerType: PowerType.GENERATE,
   materials: [],
@@ -241,7 +249,7 @@ export const AdvancedFremenDeathstill: WaterGenerator = {
   materials: [],
 };
 
-const utilities = [
+export const utilities: Placeable[] = [
   SubFiefConsole,
   AdvancedSubFiefConsole,
   FuelPoweredGenerator,
@@ -258,7 +266,7 @@ const utilities = [
   AdvancedFremenDeathstill,
 ];
 
-const fabricators = [
+export const fabricators: Placeable[] = [
   Fabricator,
   GarmentFabricator,
   AdvancedGarmentFabricator,
@@ -270,7 +278,7 @@ const fabricators = [
   AdvancedVehiclesFabricator,
 ];
 
-const refineries = [
+export const refineries: Placeable[] = [
   BloodPurifier,
   ImprovedBloodPurifier,
   SmallOreRefinery,
@@ -282,3 +290,12 @@ const refineries = [
   MediumSpiceRefinery,
   LargeSpiceRefinery,
 ];
+
+export const storage: Placeable[] = [];
+
+export const CategoryMap: Record<Category, Placeable[]> = {
+  Utilities: utilities,
+  Fabricators: fabricators,
+  Refineries: refineries,
+  Storage: storage,
+};
